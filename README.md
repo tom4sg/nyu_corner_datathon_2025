@@ -3,9 +3,6 @@
 This notebook implements a RAG recommendation system in Python to match open-ended user queries with NYC
 venues using structured tags, reviews, and image data.
 
----
-https://github.com/user-attachments/assets/d139b7e4-dce4-49a3-95ab-e7e8c6897689
-
 #### **Data**
 - **Places**: Venue name, neighborhood, tags, description  
 - **Reviews**: User-generated content  
@@ -96,4 +93,5 @@ The system generates several precomputed files:
   - Image: 512 (CLIP)
 
 ---
+https://github.com/user-attachments/assets/d139b7e4-dce4-49a3-95ab-e7e8c6897689
 

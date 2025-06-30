@@ -62,7 +62,7 @@ results = hybrid_search(
 )
 
 
-#### Dependencies
+### Dependencies
 
 python
 sentence_transformers
@@ -78,7 +78,7 @@ joblib
 pathlib
 
 
-#### Output Files
+### Output Files
 
 The system generates several precomputed files:
 - merged.csv: Complete dataset with all embeddings
@@ -86,7 +86,7 @@ The system generates several precomputed files:
 - image.index: FAISS index for image embeddings
 - merge_dense_and_sparse_df.joblib: Pickled dataframe with all embeddings
 
-#### Performance
+### Performance
 
 - **Dataset Size**: 1,500+ places, 30,000+ media URLs
 - **Embedding Dimensions**: 

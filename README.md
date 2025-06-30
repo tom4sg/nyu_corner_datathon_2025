@@ -39,7 +39,7 @@ venues using structured tags, reviews, and image data.
 
 ### Usage Examples
 
-python
+```python
 # Basic dense search
 results = search_places_dense_metadata("where to drink a matcha", top_k=5)
 
@@ -60,11 +60,11 @@ results = hybrid_search(
     weight_sparse=0.3,
     weight_image=0.3
 )
-
+```
 
 ### Dependencies
 
-python
+```python
 sentence_transformers
 fastembed
 transformers
@@ -76,7 +76,7 @@ tqdm
 spacy
 joblib
 pathlib
-
+```
 
 ### Output Files
 

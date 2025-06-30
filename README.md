@@ -4,15 +4,17 @@ A comprehensive Retrieval-Augmented Generation (RAG) solution for place/venue se
 
 ## Overview
 
-This notebook implements a sophisticated search system that combines multiple types of embeddings to provide highly relevant search results for places and venues. The solution uses a hybrid approach combining dense text embeddings, sparse text embeddings, and multimodal image embeddings.
+This notebook implements a RAG recommendation system in Python to match open-ended user queries with NYC
+venues using structured tags, reviews, and image data.
 
 ## Features
 
-### 🔍 **Hybrid Search System**
-- **Dense Text Embeddings**: Using SentenceTransformers (all-MiniLM-L6-v2) for semantic understanding
-- **Sparse Text Embeddings**: Using FastEmbed (Splade_PP_en_v1) for explicit keyword matching
-- **Multimodal Image Embeddings**: Using CLIP for visual-semantic understanding
-- **Weighted Combination**: Configurable weights for optimal search results
+## Data Structure
+
+The system processes three main datasets:
+- **Places**: Core venue information (name, neighborhood, tags, description)
+- **Reviews**: User-generated reviews for each place
+- **Media**: Image URLs associated with each place
 
 ### **Data Processing**
 - Aggregates reviews and media URLs per place
@@ -24,12 +26,11 @@ This notebook implements a sophisticated search system that combines multiple ty
 - **Cosine Similarity**: For sparse embeddings
 - **Normalized Scoring**: MinMax scaling for fair comparison across different embedding types
 
-## Data Structure
-
-The system processes three main datasets:
-- **Places**: Core venue information (name, neighborhood, tags, description)
-- **Reviews**: User-generated reviews for each place
-- **Media**: Image URLs associated with each place
+### 🔍 **Hybrid Search System**
+- **Dense Text Embeddings**: Using SentenceTransformers (all-MiniLM-L6-v2) for semantic understanding
+- **Sparse Text Embeddings**: Using FastEmbed (Splade_PP_en_v1) for explicit keyword matching
+- **Multimodal Image Embeddings**: Using CLIP for visual-semantic understanding
+- **Weighted Combination**: Configurable weights for optimal search results
 
 ## Key Functions
 
@@ -99,8 +100,6 @@ The system generates several precomputed files:
   - Dense: 384 (MiniLM)
   - Sparse: 30,315 (Splade)
   - Image: 512 (CLIP)
-- **Search Speed**: Sub-second response times with FAISS
-- **Memory Efficient**: Batch processing for large datasets
 
 ---
 https://github.com/user-attachments/assets/d139b7e4-dce4-49a3-95ab-e7e8c6897689

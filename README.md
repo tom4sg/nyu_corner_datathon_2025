@@ -1,9 +1,5 @@
 # NYU x Corner Datathon 2025 Solution
 
-A comprehensive Retrieval-Augmented Generation (RAG) solution for place/venue search using hybrid embeddings and vector similarity search.
-
-## Overview
-
 This notebook implements a RAG recommendation system in Python to match open-ended user queries with NYC
 venues using structured tags, reviews, and image data.
 

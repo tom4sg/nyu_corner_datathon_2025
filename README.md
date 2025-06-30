@@ -8,7 +8,6 @@ venues using structured tags, reviews, and image data.
 - **Places**: Venue name, neighborhood, tags, description  
 - **Reviews**: User-generated content  
 - **Media**: Associated image URLs  
-> Supports 1,500+ venues and 30K+ images
 
 ---
 

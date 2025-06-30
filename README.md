@@ -11,7 +11,7 @@ venues using structured tags, reviews, and image data.
 
 ---
 
-#### ⚙**Processing**
+#### **Processing**
 - Aggregates reviews and media per place  
 - Merges structured and unstructured data into unified place representations
 

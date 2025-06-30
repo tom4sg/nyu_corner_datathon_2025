@@ -77,22 +77,5 @@ spacy
 joblib
 pathlib
 ```
-
-### Output Files
-
-The system generates several precomputed files:
-- merged.csv: Complete dataset with all embeddings
-- metadata.index: FAISS index for dense text embeddings
-- image.index: FAISS index for image embeddings
-- merge_dense_and_sparse_df.joblib: Pickled dataframe with all embeddings
-
-### Performance
-
-- **Dataset Size**: 1,500+ places, 30,000+ media URLs
-- **Embedding Dimensions**: 
-  - Dense: 384 (MiniLM)
-  - Sparse: 30,315 (Splade)
-  - Image: 512 (CLIP)
-
 ---
 https://github.com/user-attachments/assets/d139b7e4-dce4-49a3-95ab-e7e8c6897689

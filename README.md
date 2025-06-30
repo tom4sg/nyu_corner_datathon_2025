@@ -5,38 +5,6 @@ venues using structured tags, reviews, and image data.
 
 ---
 
-#### **Data**
-- **Places**: Venue name, neighborhood, tags, description  
-- **Reviews**: User-generated content  
-- **Media**: Associated image URLs  
-
----
-
-#### **Processing**
-- Aggregates reviews and media per place  
-- Merges structured and unstructured data into unified place representations
-
----
-
-#### **Search System**
-- **Dense Embeddings**: SentenceTransformers (MiniLM) for semantic text  
-- **Sparse Embeddings**: FastEmbed (SPLADE) for keyword relevance  
-- **Image Embeddings**: CLIP for visual features  
-- **Similarity**: FAISS for dense & image search, cosine for sparse  
-- **Scoring**: MinMax normalized + configurable hybrid weighting
-
-### Key Functions
-
-#### Core Search Functions
-- search_places_dense_metadata(): Dense text similarity search
-- search_places_sparse_metadata(): Sparse text similarity search  
-- hybrid_search(): Combined search with configurable weights
-
-#### Query Processing
-- process_user_query(): Comprehensive query analysis
-- semantic_category_detection(): Activity type classification
-- expand_query_with_llm(): Query enhancement
-
 ### Usage Examples
 
 ```python

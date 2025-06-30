@@ -71,22 +71,15 @@ results = hybrid_search(
 ## Dependencies
 
 ```python
-# Core ML libraries
 sentence_transformers
 fastembed
 transformers
 faiss-cpu
 scikit-learn
-
-# Data processing
 pandas
 numpy
 tqdm
-
-# NLP
 spacy
-
-# Utilities
 joblib
 pathlib
 ```
@@ -108,31 +101,6 @@ The system generates several precomputed files:
   - Image: 512 (CLIP)
 - **Search Speed**: Sub-second response times with FAISS
 - **Memory Efficient**: Batch processing for large datasets
-
-## Use Cases
-
-This RAG solution is ideal for:
-- **Location-based search applications**
-- **Venue recommendation systems**
-- **Tourism and hospitality platforms**
-- **Event planning and discovery**
-- **Local business directories**
-
-## Future Enhancements
-
-- Multi-image embedding per place (currently uses 1 image per place)
-- Real-time embedding updates
-- User feedback integration for search refinement
-- Advanced query understanding with LLM integration
-- Geographic clustering and filtering
-
-## Technical Notes
-
-- Uses L2 distance for FAISS indices (suitable for normalized embeddings)
-- Implements batch processing for memory efficiency
-- Normalizes all similarity scores to [0,1] range for fair comparison
-- Configurable weights allow tuning for different use cases
-- Handles missing data gracefully with fallback strategies 
 
 ---
 https://github.com/user-attachments/assets/d139b7e4-dce4-49a3-95ab-e7e8c6897689

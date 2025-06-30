@@ -3,28 +3,27 @@
 This notebook implements a RAG recommendation system in Python to match open-ended user queries with NYC
 venues using structured tags, reviews, and image data.
 
-## Data Structure
 
-The system processes three main datasets:
-- **Places**: Core venue information (name, neighborhood, tags, description)
-- **Reviews**: User-generated reviews for each place
-- **Media**: Image URLs associated with each place
+#### **Data**
+- **Places**: Venue name, neighborhood, tags, description  
+- **Reviews**: User-generated content  
+- **Media**: Associated image URLs  
+> Supports 1,500+ venues and 30K+ images
 
-### **Data Processing**
-- Aggregates reviews and media URLs per place
-- Combines structured data (name, neighborhood, tags, description) with user reviews
-- Handles 1,500+ places with 30,000+ media URLs efficiently
+---
 
-### **Vector Search**
-- **FAISS**: Fast similarity search for dense and image embeddings
-- **Cosine Similarity**: For sparse embeddings
-- **Normalized Scoring**: MinMax scaling for fair comparison across different embedding types
+#### ⚙**Processing**
+- Aggregates reviews and media per place  
+- Merges structured and unstructured data into unified place representations
 
-### 🔍 **Hybrid Search System**
-- **Dense Text Embeddings**: Using SentenceTransformers (all-MiniLM-L6-v2) for semantic understanding
-- **Sparse Text Embeddings**: Using FastEmbed (Splade_PP_en_v1) for explicit keyword matching
-- **Multimodal Image Embeddings**: Using CLIP for visual-semantic understanding
-- **Weighted Combination**: Configurable weights for optimal search results
+---
+
+#### **Search System**
+- **Dense Embeddings**: `SentenceTransformers` (`MiniLM`) for semantic text  
+- **Sparse Embeddings**: `FastEmbed` (`SPLADE`) for keyword relevance  
+- **Image Embeddings**: `CLIP` for visual features  
+- **Similarity**: FAISS for dense & image search, cosine for sparse  
+- **Scoring**: MinMax normalized + configurable hybrid weighting
 
 ## Key Functions
 

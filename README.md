@@ -28,14 +28,14 @@ venues using structured tags, reviews, and image data.
 ### Key Functions
 
 #### Core Search Functions
-- search_places_dense_metadata(): Dense text similarity search
-- search_places_sparse_metadata(): Sparse text similarity search  
-- hybrid_search(): Combined search with configurable weights
+- 'search_places_dense_metadata()': Dense text similarity search
+- 'search_places_sparse_metadata()': Sparse text similarity search  
+- 'hybrid_search()': Combined search with configurable weights
 
 #### Query Processing
-- process_user_query(): Comprehensive query analysis
-- semantic_category_detection(): Activity type classification
-- expand_query_with_llm(): Query enhancement
+- 'process_user_query()': Comprehensive query analysis
+- 'semantic_category_detection()': Activity type classification
+- 'expand_query_with_llm()': Query enhancement
 
 ### Usage Examples
 

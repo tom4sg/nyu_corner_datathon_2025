@@ -24,19 +24,19 @@ venues using structured tags, reviews, and image data.
 - **Similarity**: FAISS for dense & image search, cosine for sparse  
 - **Scoring**: MinMax normalized + configurable hybrid weighting
 
-## Key Functions
+### Key Functions
 
-### Core Search Functions
+#### Core Search Functions
 - `search_places_dense_metadata()`: Dense text similarity search
 - `search_places_sparse_metadata()`: Sparse text similarity search  
 - `hybrid_search()`: Combined search with configurable weights
 
-### Query Processing
+#### Query Processing
 - `process_user_query()`: Comprehensive query analysis
 - `semantic_category_detection()`: Activity type classification
 - `expand_query_with_llm()`: Query enhancement
 
-## Usage Examples
+### Usage Examples
 
 ```python
 # Basic dense search
@@ -61,7 +61,7 @@ results = hybrid_search(
 )
 ```
 
-## Dependencies
+### Dependencies
 
 ```python
 sentence_transformers
@@ -77,7 +77,7 @@ joblib
 pathlib
 ```
 
-## Output Files
+### Output Files
 
 The system generates several precomputed files:
 - `merged.csv`: Complete dataset with all embeddings
@@ -85,7 +85,7 @@ The system generates several precomputed files:
 - `image.index`: FAISS index for image embeddings
 - `merge_dense_and_sparse_df.joblib`: Pickled dataframe with all embeddings
 
-## Performance
+### Performance
 
 - **Dataset Size**: 1,500+ places, 30,000+ media URLs
 - **Embedding Dimensions**: 

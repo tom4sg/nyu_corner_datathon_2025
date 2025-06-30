@@ -3,8 +3,6 @@
 This notebook implements a RAG recommendation system in Python to match open-ended user queries with NYC
 venues using structured tags, reviews, and image data.
 
-## Features
-
 ## Data Structure
 
 The system processes three main datasets:

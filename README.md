@@ -14,21 +14,15 @@ This notebook implements a sophisticated search system that combines multiple ty
 - **Multimodal Image Embeddings**: Using CLIP for visual-semantic understanding
 - **Weighted Combination**: Configurable weights for optimal search results
 
-### 📊 **Data Processing**
+### **Data Processing**
 - Aggregates reviews and media URLs per place
 - Combines structured data (name, neighborhood, tags, description) with user reviews
 - Handles 1,500+ places with 30,000+ media URLs efficiently
 
-### 🚀 **Vector Search**
+### **Vector Search**
 - **FAISS**: Fast similarity search for dense and image embeddings
 - **Cosine Similarity**: For sparse embeddings
 - **Normalized Scoring**: MinMax scaling for fair comparison across different embedding types
-
-### 🎯 **Query Enhancement**
-- **NER Detection**: Extracts locations and entities from queries
-- **Category Detection**: Identifies activity types (eat, drink, study, dance, etc.)
-- **Weather Awareness**: Detects weather-related keywords
-- **Query Expansion**: Enhances vague queries with relevant terms
 
 ## Data Structure
 

@@ -1,10 +1,5 @@
 # NYU x Corner Datathon 2025 Solution
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/e4768aea-1311-4684-a876-a28d3377b311" 
-       alt="Announcement" width="200" />
-  <img src="https://github.com/user-attachments/assets/cdb89808-0866-4279-b391-6ca31ad25df3" 
-       alt="Winners" width="200" />
-</p>
+
 Won 1st place in NYU DSC 2025 Datathon - This notebook implements a RAG recommendation system in Python to match open-ended user queries with NYC
 venues using structured tags, reviews, and image data.
 
